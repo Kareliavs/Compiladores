@@ -1,9 +1,11 @@
 intw main {
 ia
-int iA3i =#;
+aa
+int iA3i=2;
 +=
+"hola soy"
 @ 7 0.277 /*kkk
 @
-lll0*/
+lll0
 <
 }

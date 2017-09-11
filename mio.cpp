@@ -12,9 +12,23 @@ using namespace std;
 char caracter = ' ';
 vector<char> listarecorrido;
 vector<pair < string ,int > > lista; 
+			// token 		LEXEMAS   linea
 vector<pair< string ,  pair < string ,int > > > lista_tokens; 
 vector<pair< string ,  pair < string ,int > > > lista_errores; 
 vector<pair< string ,  pair < string ,int > > > tabla_simbolos; 
+vector<pair< 
+				pair< 
+					string,  				//TOKEN ID 
+					pair < string ,int > 	// LEXEMA  // linea
+
+				> ,
+				pair< 
+					string,  				//TOKEN char int float...
+					pair < string , basic_string<char>* > 	//Lexema // direccion
+
+				> 
+			> 
+		>tabla_simbolos_completa; 
 
 
 void metodoArchivo() {//Lee caracter por caracter del Archivo .txt
@@ -101,7 +115,7 @@ void metodoArchivo() {//Lee caracter por caracter del Archivo .txt
 				{   
 			   	 	
 			   	 	//cout<< line <<"toki: "<<  token << endl;
-            		lista.push_back(make_pair(token,line));
+            		if(b==0)lista.push_back(make_pair(token,line));
 				}
 				if(buscar_cierre==1)buscar_cierre=0;
 			    //lista.push_back(ptr);
@@ -156,8 +170,10 @@ void validacion2(pair < string ,int > palabra)
 		}
 		palabra.first=aux;
 		if(palabra.first =="" or palabra.first ==" " or palabra.first =="\n" ) ;
+		else if (palabra.first[0] =='"')
+			lista_tokens.push_back(make_pair("Cadena", make_pair(palabra.first ,palabra.second)));
 		else if (palabra.first =="main")
-			lista_tokens.push_back(make_pair("PC", make_pair(palabra.first ,palabra.second)));
+			lista_tokens.push_back(make_pair("PC_clave_main", make_pair(palabra.first ,palabra.second)));
 		else if (palabra.first =="char")
 			lista_tokens.push_back(make_pair("PC_Decl_char", make_pair(palabra.first ,palabra.second)));
 		else if (palabra.first =="float")
@@ -174,8 +190,6 @@ void validacion2(pair < string ,int > palabra)
 			lista_tokens.push_back(make_pair("PC_Clave_if", make_pair(palabra.first ,palabra.second)));
 		else if (palabra.first =="return")
 			lista_tokens.push_back(make_pair("PC_Clave_return", make_pair(palabra.first ,palabra.second)));
-		else if (palabra.first =="while")
-			lista_tokens.push_back(make_pair("PC_Clave_while", make_pair(palabra.first ,palabra.second)));
 		else if (palabra.first =="while")
 			lista_tokens.push_back(make_pair("PC_Clave_while", make_pair(palabra.first ,palabra.second)));
 		else if (palabra.first =="+")
@@ -232,6 +246,10 @@ void validacion2(pair < string ,int > palabra)
 			lista_tokens.push_back(make_pair("Punto_Coma", make_pair(palabra.first ,palabra.second)));
 		else if (palabra.first ==",")
 			lista_tokens.push_back(make_pair("Coma", make_pair(palabra.first ,palabra.second)));
+		else if (palabra.first =="++")
+			lista_tokens.push_back(make_pair("OP_Mas_Mas", make_pair(palabra.first ,palabra.second)));
+		else if (palabra.first =="--")
+			lista_tokens.push_back(make_pair("OP_Menos_Menos", make_pair(palabra.first ,palabra.second)));
 		else if(regex_match(palabra.first,integer))
 			lista_tokens.push_back(make_pair("Num_Entero", make_pair(palabra.first ,palabra.second)));	
 		else if(regex_match(palabra.first,flotante))
@@ -352,17 +370,11 @@ void tokens()
 int main()
 {
   metodoArchivo();
-  for(int i=0; i<lista.size();i++)
-  	cout<<lista[i].second<<"\t"<<lista[i].first<<endl;
+  /*for(int i=0; i<lista.size();i++)
+  	cout<<lista[i].second<<"\t"<<lista[i].first<<endl;*/
   tokens();
-  cout<<"LISTA DE LEXEMAS"<<endl;
-  for(int i=0; i<lista_tokens.size();i++)
-  	cout<<lista_tokens[i].second.second<<"\t"<<lista_tokens[i].second.first<<"\t"<<lista_tokens[i].first<<endl;
-
-  cout<<"TABLA DE ERRORES"<<endl;
-  for(int i=0; i<lista_errores.size();i++)
-  	cout<<lista_errores[i].second.second<<"\t"<<lista_errores[i].second.first<<"\t"<<lista_errores[i].first<<endl;
-
+  // TODO
+  /*
   tabla_simbolos.push_back(lista_tokens[0]);
   for(int i=1; i<lista_tokens.size();i++)
   { 
@@ -376,10 +388,79 @@ int main()
   				tabla_simbolos.push_back(lista_tokens[i]);
   		
   		}
-
   }
-  cout<<"TABLA DE SIMBOLOS"<<endl;
+
+
+  */
+  //SOLO ENTRAN VALIABLES
+  tabla_simbolos.push_back(lista_tokens[0]);
+  for(int i=1; i<lista_tokens.size();i++)
+  { 
+  	for(int j=0; j<tabla_simbolos.size();j++)
+  		{   
+  			if(lista_tokens[i].second.first==tabla_simbolos[j].second.first)
+  				{	//cout<<"i: "<<i<<endl;
+  					break;
+  				}
+  			if(j==tabla_simbolos.size()-1 and lista_tokens[i].first=="ID" /*(lista_tokens[i].first=="PC_Decl_char" or lista_tokens[i].first== "PC_Decl_float"
+  				or lista_tokens[i].first=="PC_Decl_int" or lista_tokens[i].first=="PC_Decl_long")*/)
+  				tabla_simbolos.push_back(lista_tokens[i]);
+  		
+  		}
+  }
+  for (int i =0; i< tabla_simbolos.size();i++)
+  	for (int j=0; j< lista_tokens.size();j++)
+  		if(tabla_simbolos[i]==lista_tokens[j])
+  		{   
+  			if(lista_tokens[j+1].first=="OP_Asignacion_Igual" and( lista_tokens[j+2].first=="Num_Entero" or lista_tokens[j+2].first== "Num_Flotante"
+  				or lista_tokens[j+2].first=="Cadena" ) )
+	  		{   
+	  			auto* p = &tabla_simbolos[i].second.first ;
+	  			//cout<<"DIRECCION "<<p;
+	  			basic_string<char>* c2 = p;
+	  			tabla_simbolos_completa.push_back
+	  			(
+	  				make_pair
+	  				(
+	  					tabla_simbolos[i], 
+	  					make_pair
+	  					(  	
+	  						lista_tokens[j+2].first, 
+	  						make_pair
+	  						( 
+	  							lista_tokens[j+2].second.first, 
+	  							c2
+	  						) 
+						)
+					)
+				);
+	  		}
+	  		else 
+	  		{
+	  			lista_errores.push_back(make_pair("Warning: Variable no usada",tabla_simbolos[i].second));
+	  		}
+
+
+  		}	
+
+  cout<<endl<<"LISTA DE LEXEMAS"<<endl;
+  for(int i=0; i<lista_tokens.size();i++)
+  	cout<<lista_tokens[i].second.second<<"\t"<<lista_tokens[i].second.first<<"\t"<<lista_tokens[i].first<<endl;
+
+
+  cout<<endl<<"TABLA DE ERRORES"<<endl;
+  for(int i=0; i<lista_errores.size();i++)
+  	cout<<lista_errores[i].second.second<<"\t"<<lista_errores[i].second.first<<"\t"<<lista_errores[i].first<<endl;
+
+  cout<<endl<<"TABLA DE SIMBOLOS"<<endl;
+  for(int i=0; i<tabla_simbolos_completa.size();i++)
+  	cout<<tabla_simbolos_completa[i].first.second.second<<"\t"<<tabla_simbolos_completa[i].first.second.first<<"\t"<<tabla_simbolos_completa[i].first.first<<
+  	"\t"<<tabla_simbolos_completa[i].second.first<<"\t"<<tabla_simbolos_completa[i].second.second.first<<"\t"<<tabla_simbolos_completa[i].second.second.second<< endl;	
+  
+  cout<<endl;
+  
+  /*cout<<"TABLA DE SIMBOLOS"<<endl;
   for(int i=0; i<tabla_simbolos.size();i++)
-  	cout<<tabla_simbolos[i].second.second<<"\t"<<tabla_simbolos[i].second.first<<"\t"<<tabla_simbolos[i].first<<endl;	
+  	cout<<tabla_simbolos[i].second.second<<"\t"<<tabla_simbolos[i].second.first<<"\t"<<tabla_simbolos[i].first<<endl;	*/
   return 0;
 }
