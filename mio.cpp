@@ -16,6 +16,17 @@ vector<pair < string ,int > > lista;
 vector<pair< string ,  pair < string ,int > > > lista_tokens; 
 vector<pair< string ,  pair < string ,int > > > lista_errores; 
 vector<pair< string ,  pair < string ,int > > > tabla_simbolos; 
+
+struct campos {
+        string token;
+        int linea;
+        string token_igual;
+        string lexema_igual;
+        basic_string<char>* direcccion;
+
+};
+map< string , campos > tabla_de_simbolos;
+
 vector<pair< 
 				pair< 
 					string,  				//TOKEN ID 
@@ -149,7 +160,7 @@ void validacion2(pair < string ,int > palabra)
 	//cout<<"cosita"<<cosita<<endl;
 	if(palabra.first.size()==1)
 	{   //cout<<"ESPACIO"<<endl;
-		//cout<<"posible_salto:"<<palabra.first<<endl;
+		//cout<<"posible_salto:"<<palabra.first[0]<<endl;
 		int asc=(char)palabra.first[0];
 	    //cout<<"ESPACIOO:"<<asc<<"|"<<endl;
 		if(asc==13 ) {
@@ -162,12 +173,14 @@ void validacion2(pair < string ,int > palabra)
 		string aux="";
 		for(int i=0;i<palabra.first.size();i++)
 		{
+			
 			int asc=(char)palabra.first[i];
 			if(asc!=13)
 				aux+=palabra.first[i];
 
 			//if (asc ==)
 		}
+		//cout<<"PALABRA"<<palabra.first[0]<<endl;
 		palabra.first=aux;
 		if(palabra.first =="" or palabra.first ==" " or palabra.first =="\n" ) ;
 		else if (palabra.first[0] =='"')
@@ -178,6 +191,8 @@ void validacion2(pair < string ,int > palabra)
 			lista_tokens.push_back(make_pair("PC_Decl_char", make_pair(palabra.first ,palabra.second)));
 		else if (palabra.first =="float")
 			lista_tokens.push_back(make_pair("PC_Decl_float", make_pair(palabra.first ,palabra.second)));
+		else if (palabra.first =="double")
+			lista_tokens.push_back(make_pair("PC_Decl_double", make_pair(palabra.first ,palabra.second)));
 		else if (palabra.first =="int")
 			lista_tokens.push_back(make_pair("PC_Decl_int", make_pair(palabra.first ,palabra.second)));
 		else if (palabra.first =="long")
@@ -305,13 +320,13 @@ void separar (pair < string ,int > palabra)
 		{   int cero=0;
   			if(palabra.first[j+1]=='=')
   				cero=1;
-
+  				//cout<<"GG "<<palabra.first<<endl;
   			
-				palabra1=palabra.first.substr(0,j);
+				palabra1=palabra.first.substr(0,j);//cout<<"PAlabra1 "<<palabra1<<endl;
 				if (palabra1.size()>0)separar(make_pair(palabra1,palabra.second));
-				signo= palabra.first.substr(j,1+cero);
+				signo= palabra.first.substr(j,1+cero);//cout<<"Signo "<<signo<<endl;
 				if (signo.size()>0)validacion(make_pair(signo,palabra.second));
-				palabra2= palabra.first.substr(j+1+cero,palabra.first.size()-j-2-cero);
+				palabra2= palabra.first.substr(j+1+cero,palabra.first.size()-j-1-cero);//cout<<"PAlabra2 "<<palabra2<<endl;
 				if (palabra2.size()>0) separar(make_pair(palabra2,palabra.second));
   			break;
   				
@@ -352,18 +367,42 @@ void tokens()
 {  
 	for(int i=0; i<lista.size();i++)
 	{   
+		//cout<<"Algo "<<lista[i].first<<endl;
 		separar(lista[i]);
 		
   	//cout<<lista[i].second<<"\t"<<lista[i].first<<endl;
 		//cout<<"palabra: "<<palabra<<"  signo:"<<signo<<endl;
 	}
 	for(int i=0; i<lis.size();i++)
-	{   
+	{   //cout<<"Algos "<<lista[i].first<<endl;
 		validacion2(lis[i]);
 		
   	//cout<<lista[i].second<<"\t"<<lista[i].first<<endl;
 		//cout<<"palabra: "<<palabra<<"  signo:"<<signo<<endl;
 	}
+
+}
+void inicializa_tabla_simbolos()
+{
+  for(int i=0; i<lista_tokens.size();i++)
+  {
+   campos a;
+   a.token=lista_tokens[i].first;
+   a.linea=lista_tokens[i].second.second;
+   a.direcccion= &lista_tokens[i].first;
+   if(lista_tokens[i+1].first=="OP_Asignacion_Igual" and( lista_tokens[i+2].first=="Num_Entero" or lista_tokens[i+2].first== "Num_Flotante"
+  				or lista_tokens[i+2].first=="Cadena" or lista_tokens[i+2].first=="ID" ) )
+   {
+   		a.token_igual=lista_tokens[i+2].first;
+   		a.lexema_igual=lista_tokens[i+2].second.second;
+   }
+
+   
+   //cout<<"ici"<<endl;
+   if(lista_tokens[i].first=="ID")
+   	tabla_de_simbolos.insert(std::pair<string, campos>(lista_tokens[i].second.first,a));
+   //cout <<lista_tokens[i].second.first<<endl;
+  }
 
 }
 
@@ -373,7 +412,26 @@ int main()
   /*for(int i=0; i<lista.size();i++)
   	cout<<lista[i].second<<"\t"<<lista[i].first<<endl;*/
   tokens();
+  inicializa_tabla_simbolos();
   // TODO
+  /*tabla_simbolos.push_back(lista_tokens[0]);
+  for(int i=1; i<lista_tokens.size();i++)
+  { 
+  	for(int j=0; j<tabla_simbolos.size();j++)
+  		{   
+  			if(lista_tokens[i].second.first==tabla_simbolos[j].second.first)
+  				{	//cout<<"i: "<<i<<endl;
+  					break;
+  				}
+  			if(j==tabla_simbolos.size()-1 and lista_tokens[i].first=="ID")
+  				tabla_simbolos.push_back(lista_tokens[i]);
+  		
+  		}
+  }
+
+
+  
+  //SOLO ENTRAN VALIABLES
   /*
   tabla_simbolos.push_back(lista_tokens[0]);
   for(int i=1; i<lista_tokens.size();i++)
@@ -384,26 +442,8 @@ int main()
   				{	//cout<<"i: "<<i<<endl;
   					break;
   				}
-  			if(j==tabla_simbolos.size()-1)
-  				tabla_simbolos.push_back(lista_tokens[i]);
-  		
-  		}
-  }
-
-
-  */
-  //SOLO ENTRAN VALIABLES
-  tabla_simbolos.push_back(lista_tokens[0]);
-  for(int i=1; i<lista_tokens.size();i++)
-  { 
-  	for(int j=0; j<tabla_simbolos.size();j++)
-  		{   
-  			if(lista_tokens[i].second.first==tabla_simbolos[j].second.first)
-  				{	//cout<<"i: "<<i<<endl;
-  					break;
-  				}
   			if(j==tabla_simbolos.size()-1 and lista_tokens[i].first=="ID" /*(lista_tokens[i].first=="PC_Decl_char" or lista_tokens[i].first== "PC_Decl_float"
-  				or lista_tokens[i].first=="PC_Decl_int" or lista_tokens[i].first=="PC_Decl_long")*/)
+  				or lista_tokens[i].first=="PC_Decl_int" or lista_tokens[i].first=="PC_Decl_long")/**//*)
   				tabla_simbolos.push_back(lista_tokens[i]);
   		
   		}
@@ -413,10 +453,11 @@ int main()
   		if(tabla_simbolos[i]==lista_tokens[j])
   		{   
   			if(lista_tokens[j+1].first=="OP_Asignacion_Igual" and( lista_tokens[j+2].first=="Num_Entero" or lista_tokens[j+2].first== "Num_Flotante"
-  				or lista_tokens[j+2].first=="Cadena" ) )
+  				or lista_tokens[j+2].first=="Cadena" or lista_tokens[j+2].first=="ID" ) )
 	  		{   
 	  			auto* p = &tabla_simbolos[i].second.first ;
 	  			//cout<<"DIRECCION "<<p;
+	  			//cout<<"HERE "<<lista_tokens[j+2].first<<endl;
 	  			basic_string<char>* c2 = p;
 	  			tabla_simbolos_completa.push_back
 	  			(
@@ -436,14 +477,14 @@ int main()
 				);
 	  		}
 	  		else 
-	  		{
-	  			lista_errores.push_back(make_pair("Warning: Variable no usada",tabla_simbolos[i].second));
+	  		{   //cout<<"AQUI  "<<tabla_simbolos[i].first<<endl;
+	  			if(tabla_simbolos[i].first =="ID")lista_errores.push_back(make_pair("Warning: Variable no usada",tabla_simbolos[i].second));
 	  		}
 
 
   		}	
-
-  cout<<endl<<"LISTA DE LEXEMAS"<<endl;
+*/
+  cout<<endl<<"LISTA DE TOKENS"<<endl;
   for(int i=0; i<lista_tokens.size();i++)
   	cout<<lista_tokens[i].second.second<<"\t"<<lista_tokens[i].second.first<<"\t"<<lista_tokens[i].first<<endl;
 
@@ -452,15 +493,20 @@ int main()
   for(int i=0; i<lista_errores.size();i++)
   	cout<<lista_errores[i].second.second<<"\t"<<lista_errores[i].second.first<<"\t"<<lista_errores[i].first<<endl;
 
-  cout<<endl<<"TABLA DE SIMBOLOS"<<endl;
+  /*cout<<endl<<"TABLA DE SIMBOLOS"<<endl;
   for(int i=0; i<tabla_simbolos_completa.size();i++)
   	cout<<tabla_simbolos_completa[i].first.second.second<<"\t"<<tabla_simbolos_completa[i].first.second.first<<"\t"<<tabla_simbolos_completa[i].first.first<<
   	"\t"<<tabla_simbolos_completa[i].second.first<<"\t"<<tabla_simbolos_completa[i].second.second.first<<"\t"<<tabla_simbolos_completa[i].second.second.second<< endl;	
-  
+  */
+    
+  //cout<<"TABLA DE SIMBOLOS"<<endl;
+  //for(int i=0; i<tabla_simbolos.size();i++)
+  //	cout/*<<tabla_simbolos[i].second.second<<"\t"*/<<tabla_simbolos[i].second.first<<"\t"<</*tabla_simbolos[i].first<<*/endl;	
+  map< string , campos >::iterator iter;
+  cout<<"TABLA DE SIMBOLOS"<<endl;
+  for(iter=tabla_de_simbolos.begin(); iter!=tabla_de_simbolos.end();iter++)
+  	cout<<iter->first<<"\t"<<iter->second.token_igual<<endl;
+
   cout<<endl;
-  
-  /*cout<<"TABLA DE SIMBOLOS"<<endl;
-  for(int i=0; i<tabla_simbolos.size();i++)
-  	cout<<tabla_simbolos[i].second.second<<"\t"<<tabla_simbolos[i].second.first<<"\t"<<tabla_simbolos[i].first<<endl;	*/
   return 0;
 }
