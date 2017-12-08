@@ -1,0 +1,61 @@
+
+PC_Decl_long
+
+PC_Clave_for
+
+
+OP_Asignacion_Mas_Igual
+OP_Asignacion_Menos_Igual
+OP_Asignacion_Por_Igual
+OP_Asignacion_Entre_Igual
+
+
+OP_Logico_Negacion
+
+
+
+OP_Mas_Mas
+OP_Menos_Menos
+
+
+
+cadena
+
+--------------------------------------------------------
+		string PC_clave_Include;
+        string PC_Decl_int;
+        string PC_Decl_float;
+		string PC_Decl_double;
+		string PC_Decl_bool;
+		string PC_Decl_char;
+		string PC_clave_main;
+		string Parentesis_Abierto;
+		string Paretesis_Cerrado;
+		string Llave_Abierta;
+		string Llave_Cerrada;
+		string Corchete_Abierto;
+		string Corchete_Cerrado;
+		string Punto_Coma;
+		string Coma;
+		string OP_Asignacion_Igual;
+		string PC_Clave_return;
+		string Num_Entero;
+		string OP_Logico_And;
+		string OP_Logico_Or;
+		string OP_Relacional_Menor;
+		string OP_Relacional_Mayor;
+		string OP_Relacional_Mayor_Igual;
+		string OP_Relacional_Menor_Igual;
+		string OP_Relacional_Igual;
+		string OP_Relacional_Diferente;
+		string OP_Aritmetico_Suma;
+		string OP_Aritmetico_Resta;
+		string OP_Aritmetico_Mult;
+		string OP_Aritmetico_Div;
+		string OP_Aritmetico_Mod;
+		string ID;
+		string PC_Clave_if;
+		string PC_Clave_while;
+        string PC_Clave_else;
+        string Num_Flotante;
+        string $;

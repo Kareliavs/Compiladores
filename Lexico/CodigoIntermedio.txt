@@ -1,0 +1,6 @@
+Etiqueta comienzo while1:
+	
+	if  = 0 goto Etiqueta despues while1
+	
+	goto Etiqueta comienzo while1
+Etiqueta despues while1:

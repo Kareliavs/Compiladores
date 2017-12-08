@@ -1,0 +1,1000 @@
+ 1005  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1006  ./demo
+ 1007  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1008  ./demo
+ 1009  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1010  ./demo
+ 1011  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1012  ./demo
+ 1013  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1014  ./demo
+ 1015  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1016  ./demo
+ 1017  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1018  ./demo
+ 1019  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1020  ./demo
+ 1021  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1022  ./demo
+ 1023  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1024  ./demo
+ 1025  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1026  ./demo
+ 1027  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1028  ./demo
+ 1029  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1030  ./demo
+ 1031  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1032  ./demo
+ 1033  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1034  ./demo
+ 1035  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1036  ./demo
+ 1037  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1038  3
+ 1039  ./demo
+ 1040  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1041  ./demo
+ 1042  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1043  ./demo
+ 1044  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1045  ./demo
+ 1046  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1047  ./demo
+ 1048  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1049  ./demo
+ 1050  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1051  ./demo
+ 1052  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1053  ./demo
+ 1054  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1055  ./demo
+ 1056  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1057  ./demo
+ 1058  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1059  ./demo
+ 1060  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1061  ./demo
+ 1062  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1063  ./demo
+ 1064  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1065  ./demo
+ 1066  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1067  ./demo
+ 1068  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1069  ./demo
+ 1070  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1071  ./demo
+ 1072  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1073  ./demo
+ 1074  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1075  ./demo
+ 1076  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1077  ./demo
+ 1078  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1079  ./demo
+ 1080  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1081  ./demo
+ 1082  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1083  ./demo
+ 1084  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1085  ./demo
+ 1086  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1087  ./demo
+ 1088  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1089  ./demo
+ 1090  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1091  ./demo
+ 1092  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1093  ./demo
+ 1094  g++ -std=c++11 main.cpp -o demo -lglut -lGL
+ 1095  ./demo
+ 1096  clear
+ 1097  ls
+ 1098  cd socket/
+ 1099  ls
+ 1100  cd ccr/
+ 1101  ls
+ 1102  cd 01
+ 1103  ls
+ 1104  history
+ 1105  g++ client.cpp -o c
+ 1106  g++ server.cpp -o s
+ 1107  ./c
+ 1108  g++ server.cpp -o s
+ 1109  g++ client.cpp -o c
+ 1110  ./c
+ 1111  g++ client.cpp -o c
+ 1112  g++ server.cpp -o s
+ 1113  ./c
+ 1114  g++ client.cpp -o c
+ 1115  g++ server.cpp -o s
+ 1116  g++ -std=c++11 server.cpp -o s
+ 1117  g++ client.cpp -o c
+ 1118  g++ server.cpp -o s
+ 1119  g++ client.cpp -o c
+ 1120  g++ server.cpp -o s
+ 1121  clear
+ 1122  g++ server.cpp -o s
+ 1123  clear
+ 1124  g++ server.cpp -o s
+ 1125  clear
+ 1126  g++ server.cpp -o s
+ 1127  clear
+ 1128  g++ server.cpp -o s
+ 1129  g++ client.cpp -o c
+ 1130  ./c
+ 1131  g++ client.cpp -o c
+ 1132  g++ server.cpp -o s
+ 1133  g++ client.cpp -o c
+ 1134  g++ server.cpp -o s
+ 1135  g++ client.cpp -o c
+ 1136  clear
+ 1137  ./c
+ 1138  g++ server.cpp -o s
+ 1139  clear
+ 1140  g++ server.cpp -o s
+ 1141  clear
+ 1142  g++ server.cpp -o s
+ 1143  clear
+ 1144  g++ server.cpp -o s
+ 1145  g++ client.cpp -o c
+ 1146  ./c
+ 1147  g++ client.cpp -o c
+ 1148  g++ server.cpp -o s
+ 1149  g++ client.cpp -o c
+ 1150  g++ server.cpp -o s
+ 1151  ./c
+ 1152  g++ server.cpp -o s
+ 1153  g++ client.cpp -o c
+ 1154  g++ server.cpp -o s
+ 1155  g++ client.cpp -o c
+ 1156  ./c
+ 1157  g++ client.cpp -o c
+ 1158  g++ server.cpp -o s
+ 1159  ./c
+ 1160  g++ server.cpp -o s
+ 1161  g++ client.cpp -o c
+ 1162  g++ server.cpp -o s
+ 1163  g++ client.cpp -o c
+ 1164  ./c
+ 1165  g
+ 1166  cd /home/karelia/Descargas/socket/ccr/01/client.cpp
+ 1167  cd Descargas/socket/ccr/01/client.cpp
+ 1168  cd Descargas/socket/ccr/01
+ 1169  g++ client.cpp -o c
+ 1170  g++ server.cpp -o s
+ 1171  ./c
+ 1172  ./s
+ 1173  ./c
+ 1174  ee
+ 1175  ddede
+ 1176  ./c
+ 1177  ./s
+ 1178  g++ client.cpp -o c
+ 1179  g++ server.cpp -o s
+ 1180  g++ -std=c++11 server.cpp -o s
+ 1181  g++ client.cpp -o c
+ 1182  g++ -std=c++11 server.cpp -o s
+ 1183  sudo apt-get install build-essential
+ 1184  g++ client.cpp -o c -lpthread
+ 1185  g++ server.cpp -o s -lpthread
+ 1186  g++ -std=c++11 server.cpp -o s-lpthread
+ 1187  g++ -std=c++11 server.cpp -o s-lpthread -lpthread
+ 1188  g++ -std=c++11 server.cpp -o s -lpthread
+ 1189  ./c
+ 1190  g++ -std=c++11 server.cpp -o s -lpthread
+ 1191  g++ client.cpp -o c -lpthread
+ 1192  ./s
+ 1193  g++ serverI.cpp -o s
+ 1194  g++ client.cpp -o c
+ 1195  ./c
+ 1196  hostname -I
+ 1197  g++ serverI.cpp -o s
+ 1198  g++ client.cpp -o c
+ 1199  ./c
+ 1200  g++ server.cpp -o s
+ 1201  g++ -std=c++11 server.cpp -o s -lpthread
+ 1202  g++ serverI.cpp -o s 
+ 1203  g++ client.cpp -o c
+ 1204  ./c
+ 1205  g++ client.cpp -o c
+ 1206  ./c
+ 1207  g++ client.cpp -o c
+ 1208  g++ serverI.cpp -o s 
+ 1209  ./c
+ 1210  g++ serverI.cpp -o s 
+ 1211  g++ client.cpp -o c
+ 1212  ./c
+ 1213  g++ client.cpp -o c
+ 1214  g++ serverI.cpp -o s 
+ 1215  ./c
+ 1216  g++ serverI.cpp -o s 
+ 1217  g++ client.cpp -o c
+ 1218  ./c
+ 1219  g++ -std=c++11 server.cpp -o s -lpthread
+ 1220  g++ client.cpp -o c
+ 1221  ./c
+ 1222  g++ client.cpp -o c
+ 1223  g++ -std=c++11 server.cpp -o s -lpthread
+ 1224  ./c
+ 1225  g++ -std=c++11 server.cpp -o s -lpthread
+ 1226  g++ client.cpp -o c
+ 1227  ./c
+ 1228  clear
+ 1229  ./c
+ 1230  g++ client.cpp -o c
+ 1231  g++ -std=c++11 server.cpp -o s -lpthread
+ 1232  clear
+ 1233  g++ -std=c++11 server.cpp -o s -lpthread
+ 1234  ./c
+ 1235  g++ -std=c++11 server.cpp -o s -lpthread
+ 1236  g++ client.cpp -o c
+ 1237  ./c
+ 1238  g++ -std=c++11 server.cpp -o s -lpthread
+ 1239  g++ client.cpp -o c
+ 1240  ./c
+ 1241  g++ -std=c++11 server.cpp -o s -lpthread
+ 1242  g++ client.cpp -o c
+ 1243  g++ -std=c++11 server.cpp -o s -lpthread
+ 1244  g++ client.cpp -o c
+ 1245  g++ -std=c++11 server.cpp -o s -lpthread
+ 1246  ./s
+ 1247  g++ -std=c++11 server.cpp -o s -lpthread
+ 1248  ./c
+ 1249  g++ -std=c++11 server.cpp -o s -lpthread
+ 1250  ./c
+ 1251  g++ -std=c++11 server.cpp -o s -lpthread
+ 1252  ./c
+ 1253  g++ -std=c++11 server.cpp -o s -lpthread
+ 1254  ./s
+ 1255  g++ -std=c++11 server.cpp -o s -lpthread
+ 1256  ./s
+ 1257  g++ -std=c++11 server.cpp -o s -lpthread
+ 1258  ./s
+ 1259  g++ -std=c++11 server.cpp -o s -lpthread
+ 1260  /s
+ 1261  ./c
+ 1262  ./s
+ 1263  clear
+ 1264  ./s
+ 1265  ./c
+ 1266  ./c
+ 1267  ./c
+ 1268  hostamane -I
+ 1269  hostname -I
+ 1270  g++ -std=c++11 server.cpp -o s -lpthread
+ 1271  cd Descargas/SOCKET\ NEW/
+ 1272  g++ -std=c++11 server.cpp -o s -lpthread
+ 1273  g++ client.cpp -o c
+ 1274  g++ serveri.cpp -o s
+ 1275  g++ serverI.cpp -o s
+ 1276  ./s
+ 1277  g++ -std=c++11 server.cpp -o s -lpthread
+ 1278  ./s
+ 1279  g++ -std=c++11 server.cpp -o s -lpthread
+ 1280  ./s
+ 1281  g++ -std=c++11 server.cpp -o s -lpthread
+ 1282  ./s
+ 1283  hhhh
+ 1284  hois
+ 1285  g++ -std=c++11 server.cpp -o s -lpthread
+ 1286  ./s
+ 1287  y tu 
+ 1288  ddd
+ 1289  g++ -std=c++11 server.cpp -o s -lpthread
+ 1290  ./s
+ 1291  genial esta
+ 1292  hola
+ 1293  hola amigos por que no me escuchan 
+ 1294  g++ -std=c++11 server.cpp -o s -lpthread
+ 1295  ./s
+ 1296  g++ -std=c++11 server.cpp -o s -lpthread
+ 1297  ./s
+ 1298  g++ -std=c++11 server.cpp -o s -lpthread
+ 1299  ./s
+ 1300  g++ -std=c++11 server.cpp -o s -lpthread
+ 1301  ./s
+ 1302  g++ -std=c++11 server.cpp -o s -lpthread
+ 1303  ./s
+ 1304  cd Descargas/Compiladores/
+ 1305  g++ main.cpp -o a
+ 1306  ./a
+ 1307  g++ main.cpp -o a
+ 1308  ./a
+ 1309  g++ main.cpp -o a
+ 1310  ./a
+ 1311  g++ principal.cpp -o a
+ 1312  ./a
+ 1313  g++ principal.cpp -o a
+ 1314  ./a
+ 1315  g++ principal.cpp -o a
+ 1316  ./a
+ 1317  cd Descargas/SOCKET\ NEW/
+ 1318  ls
+ 1319  g++ -std=c++11 server.cpp -o s -lpthread
+ 1320  hostname -I 
+ 1321  g++ client.cpp -o c
+ 1322  ./s
+ 1323  g++ client.cpp -o c
+ 1324  g++ principal.cpp -o a
+ 1325  ./
+ 1326  cd
+ 1327  Install libncurses5-dev.
+ 1328  install libncurses5-dev.
+ 1329  sudo apt-get install libncurses5-dev libncursesw5-dev
+ 1330  g++ principal.cpp -o a
+ 1331  g++ mio.cpp -o a
+ 1332  clear
+ 1333  g++ mio.cpp -o a
+ 1334  ./a
+ 1335  g++ mio.cpp -o a
+ 1336  ./a
+ 1337  g++ mio.cpp -o a
+ 1338  ./a
+ 1339  g++ mio.cpp -o a
+ 1340  ./a
+ 1341  g++ mio.cpp -o a
+ 1342  ./a
+ 1343  g++ mio.cpp -o a
+ 1344  ./a
+ 1345  g++ mio.cpp -o a
+ 1346  ./a
+ 1347  g++ mio.cpp -o a
+ 1348  ./a
+ 1349  g++ mio.cpp -o a
+ 1350  ./a
+ 1351  g++ mio.cpp -o a
+ 1352  ./a
+ 1353  g++ mio.cpp -o a
+ 1354  ./a
+ 1355  g++ mio.cpp -lncurses -o a
+ 1356  ./a
+ 1357  g++ mio.cpp -lncurses -o a
+ 1358  ./a
+ 1359  g++ mio.cpp -lncurses -o a
+ 1360  ./a
+ 1361  ./c
+ 1362  cd 
+ 1363  cd Descargas/
+ 1364  ls
+ 1365  g++ dibuja.cpp -o a
+ 1366  clear
+ 1367  g++ dibuja.cpp -o a
+ 1368  g++ dibuja.cpp -lncurses -o a
+ 1369  ./a
+ 1370  g++ dibuja.cpp -lncurses -o a
+ 1371  ./a
+ 1372  g++ dibuja.cpp -lncurses -o a
+ 1373  clear
+ 1374  g++ dibuja.cpp -lncurses -o a
+ 1375  cleae
+ 1376  clear
+ 1377  ls
+ 1378  g++ dibuja.cpp -lncurses -o a
+ 1379  g++ mio.cpp -lncurses -o a
+ 1380  ./a
+ 1381  cd Descargas/
+ 1382  g++ mio.cpp -lncurses -o a
+ 1383  ./a
+ 1384  g++ mio.cpp -lncurses -o a
+ 1385  ./
+ 1386  ./a
+ 1387  g++ mio.cpp -lncurses -o a
+ 1388  ./a
+ 1389  g++ mio.cpp -lncurses -o a
+ 1390  ./a
+ 1391  g++ mio.cpp -lncurses -o a
+ 1392  ./a
+ 1393  g++ mio.cpp -lncurses -o a
+ 1394  ./a
+ 1395  g++ mio.cpp -lncurses -o a
+ 1396  ./a
+ 1397  g++ mio.cpp -lncurses -o a
+ 1398  ./a
+ 1399  g++ mio.cpp -lncurses -o a
+ 1400  ./a
+ 1401  g++ mio.cpp -lncurses -o a
+ 1402  ./a
+ 1403  g++ mio.cpp -lncurses -o a
+ 1404  a
+ 1405  ./a
+ 1406  g++ mio.cpp -lncurses -o a
+ 1407  ./a
+ 1408  g++ mio.cpp -lncurses -o a
+ 1409  ./a
+ 1410  g++ mio.cpp -lncurses -o a
+ 1411  ./a
+ 1412  g++ mio.cpp -lncurses -o a
+ 1413  ./a
+ 1414  g++ mio.cpp -lncurses -o a
+ 1415  ./a
+ 1416  g++ mio.cpp -lncurses -o a
+ 1417  ./a
+ 1418  g++ mio.cpp -lncurses -o a
+ 1419  ./a
+ 1420  g++ mio.cpp -lncurses -o a
+ 1421  ./a
+ 1422  g++ mio.cpp -lncurses -o a
+ 1423  ./a
+ 1424  g++ mio.cpp -lncurses -o a
+ 1425  ./a
+ 1426  g++ mio.cpp -lncurses -o a
+ 1427  ./a
+ 1428  g++ mio.cpp -lncurses -o a
+ 1429  ./a
+ 1430  g++ mio.cpp -lncurses -o a
+ 1431  ./a
+ 1432  g++ mio.cpp -lncurses -o a
+ 1433  ./a
+ 1434  g++ mio.cpp -lncurses -o a
+ 1435  ./a
+ 1436  g++ mio.cpp -lncurses -o a
+ 1437  ./a
+ 1438  g++ mio.cpp -lncurses -o a
+ 1439  ./a
+ 1440  g++ mio.cpp -lncurses -o a
+ 1441  ./a
+ 1442  g++ mio.cpp -lncurses -o a
+ 1443  ./a
+ 1444  g++ mio.cpp -lncurses -o a
+ 1445  ./a
+ 1446  g++ mio.cpp -lncurses -o a
+ 1447  ./a
+ 1448  g++ mio.cpp -lncurses -o a
+ 1449  ./a
+ 1450  g++ mio.cpp -lncurses -o a
+ 1451  ./a
+ 1452  g++ mio.cpp -lncurses -o a
+ 1453  ./a
+ 1454  cd Descargas/
+ 1455  g++ mio.cpp -lncurses -o a
+ 1456  ./a
+ 1457  g++ mio.cpp -lncurses -o a
+ 1458  ./a
+ 1459  g++ mio.cpp -lncurses -o a
+ 1460  ./a
+ 1461  g++ mio.cpp -lncurses -o a
+ 1462  ./a
+ 1463  g++ mio.cpp -lncurses -o a
+ 1464  ./a
+ 1465  g++ mio.cpp -lncurses -o a
+ 1466  ./a
+ 1467  g++ mio.cpp -lncurses -o a
+ 1468  ./a
+ 1469  g++ mio.cpp -lncurses -o a
+ 1470  ./a
+ 1471  g++ mio.cpp -lncurses -o a
+ 1472  ./a
+ 1473  clear
+ 1474  ./a
+ 1475  clear
+ 1476  g++ mio.cpp -lncurses -o a
+ 1477  clear
+ 1478  ./a
+ 1479  clear
+ 1480  ./a
+ 1481  clear
+ 1482  g++ mio.cpp -lncurses -o a
+ 1483  ./a
+ 1484  g++ mio.cpp -lncurses -o a
+ 1485  clear
+ 1486  ./a
+ 1487  wwww
+ 1488  ./a
+ 1489  g++ mio.cpp -lncurses -o a
+ 1490  ./a
+ 1491  g++ mio.cpp -lncurses -o a
+ 1492  ./a
+ 1493  g++ mio.cpp -lncurses -o a
+ 1494  ./a
+ 1495  g++ mio.cpp -lncurses -o a
+ 1496  ./a
+ 1497  g++ mio.cpp -lncurses -o a
+ 1498  ./a
+ 1499  g++ mio.cpp -lncurses -o a
+ 1500  ./a
+ 1501  g++ mio.cpp -lncurses -o a
+ 1502  ./a
+ 1503  g++ mio.cpp -lncurses -o a
+ 1504  ./a
+ 1505  g++ mio.cpp -lncurses -o a
+ 1506  ./a
+ 1507  g++ mio.cpp -lncurses -o a
+ 1508  ./a
+ 1509  g++ mio.cpp -lncurses -o a
+ 1510  ./a
+ 1511  g++ mio.cpp -lncurses -o a
+ 1512  ./a
+ 1513  g++ mio.cpp -lncurses -o a
+ 1514  ./a
+ 1515  g++ mio.cpp -lncurses -o a
+ 1516  ./a
+ 1517  g++ mio.cpp -lncurses -o a
+ 1518  ./a
+ 1519  g++ mio.cpp -lncurses -o a
+ 1520  ./a
+ 1521  g++ mio.cpp -lncurses -o a
+ 1522  ./a
+ 1523  g++ mio.cpp -lncurses -o a
+ 1524  ./a
+ 1525  g++ mio.cpp -lncurses -o a
+ 1526  ./a
+ 1527  g++ mio.cpp -lncurses -o a
+ 1528  ./a
+ 1529  g++ mio.cpp -lncurses -o a
+ 1530  ./a
+ 1531  g++ mio.cpp -lncurses -o a
+ 1532  ./a
+ 1533  g++ mio.cpp -lncurses -o a
+ 1534  ./a
+ 1535  history
+ 1536  history >> aqui.txt
+ 1537  cd DE
+ 1538  cd Descargas/
+ 1539  ls
+ 1540  cs 
+ 1541  cd Lexico/
+ 1542  ls
+ 1543  g++ principal.cpp -o a
+ 1544  ./a
+ 1545  clear
+ 1546  ./a
+ 1547  cd Descargas/
+ 1548  ls
+ 1549  cd Lexico/
+ 1550  ls
+ 1551  subl principal.cpp
+ 1552  g++ main.cpp -o a
+ 1553  ./a
+ 1554  g++ main.cpp -o a
+ 1555  ./a
+ 1556  g++ main.cpp -o a
+ 1557  clear
+ 1558  g++ main.cpp -o a
+ 1559  g++ main.cpp -lncurses -o a
+ 1560  ./a
+ 1561  g++ main.cpp -lncurses -o a
+ 1562  ./a
+ 1563  g++ main.cpp -lncurses -o a
+ 1564  ./a
+ 1565  g++ main.cpp -lncurses -o a
+ 1566  ./a
+ 1567  g++ mio.cpp -lncurses -o a
+ 1568  ./a
+ 1569  g++ mio.cpp -lncurses -o a
+ 1570  ./a
+ 1571  sudo add-apt-repository ppa:mc3man/mpv-tests
+ 1572  sudo apt-get update
+ 1573  sudo add-apt-repository ppa:mc3man/mpv-tests
+ 1574  sudo sh DaVinci_Resolve_14.0b9_Linux.sh 
+ 1575  sudo add-apt-repository ppa:mc3man/mpv-tests
+ 1576  sudo apt update && sudo apt install mpv
+ 1577  sudo apt instal mpv
+ 1578  sudo apt install mpv
+ 1579  gcc front.c -o a
+ 1580  ./a
+ 1581  gcc front.c -o a
+ 1582  ./a
+ 1583  gcc front.c -o a
+ 1584  ./a
+ 1585  gcc front.c -o a
+ 1586  ./a
+ 1587  sudo apt-get install  glibmm 
+ 1588  clang++ -std=c++11 -stdlib=libc++ expresiones.cpp -o regex_01.out
+ 1589  g++ -std=c++11 -stdlib=libc++ expresiones.cpp -o regex_01.out
+ 1590  g++  expresiones.cpp -o regex_01.out
+ 1591  g++ -std=c++0x expresiones.cpp -lboost_regex && ./a.out 1
+ 1592  sudo apt-get install  -lboost_regex
+ 1593  sudo apt-get install  -lboost
+ 1594  g++ -std=c++0x expresiones.cpp -lboost_regex && ./a.out 1
+ 1595  g++ -std=c++0x expresiones.cpp -o a
+ 1596  ./a
+ 1597  g++ -std=c++0x mio.cpp -o a
+ 1598  g++ -std=c++11 -stdlib=libc++ mio.cpp -o a
+ 1599  g++ -std=c++0x -std=c++11 mio.cpp -o a
+ 1600  g++ -std=c++11 mio.cpp -o a
+ 1601  g++ mio.cpp -o a
+ 1602  g++ -std=c++0x -std=c++11 mio.cpp -o a
+ 1603  g++ -std=c++0x mio.cpp -o a
+ 1604  ./a
+ 1605  g++ -std=c++11 mio.cpp -o a
+ 1606  ./a
+ 1607  g++ -std=c++11 mio.cpp -o a
+ 1608  ./a
+ 1609  g++ -std=c++11 mio.cpp -o a
+ 1610  ./a
+ 1611  g++ -std=c++11 mio.cpp -o a
+ 1612  ./a
+ 1613  g++ -std=c++11 mio.cpp -o a
+ 1614  ./a
+ 1615  g++ -std=c++11 mio.cpp -o a
+ 1616  ./a
+ 1617  g++ -std=c++11 mio.cpp -o a
+ 1618  ./a
+ 1619  g++ -std=c++11 mio.cpp -o a
+ 1620  ./a
+ 1621  g++ -std=c++11 mio.cpp -o a
+ 1622  ./a
+ 1623  g++ -std=c++11 mio.cpp -o a
+ 1624  ./a
+ 1625  g++ -std=c++11 mio.cpp -o a
+ 1626  ./a
+ 1627  g++ -std=c++11 mio.cpp -o a
+ 1628  ./a
+ 1629  g++ -std=c++11 mio.cpp -o a
+ 1630  ./a
+ 1631  g++ -std=c++11 mio.cpp -o a
+ 1632  ./a
+ 1633  g++ -std=c++11 mio.cpp -o a
+ 1634  ./a
+ 1635  g++ -std=c++11 mio.cpp -o a
+ 1636  ./a
+ 1637  g++ -std=c++11 mio.cpp -o a
+ 1638  ./a
+ 1639  g++ -std=c++11 mio.cpp -o a
+ 1640  ./a
+ 1641  g++ -std=c++11 mio.cpp -o a
+ 1642  ./a
+ 1643  g++ -std=c++11 mio.cpp -o a
+ 1644  ./a
+ 1645  g++ -std=c++11 mio.cpp -o a
+ 1646  ./a
+ 1647  g++ -std=c++11 mio.cpp -o a
+ 1648  ./a
+ 1649  g++ -std=c++11 mio.cpp -o a
+ 1650  ./a
+ 1651  g++ -std=c++11 mio.cpp -o a
+ 1652  ./a
+ 1653  g++ -std=c++11 mio.cpp -o a
+ 1654  ./a
+ 1655  g++ -std=c++11 mio.cpp -o a
+ 1656  ./a
+ 1657  g++ -std=c++11 mio.cpp -o a
+ 1658  ./a
+ 1659  g++ -std=c++11 mio.cpp -o a
+ 1660  ./a
+ 1661  g++ -std=c++11 mio.cpp -o a
+ 1662  ./a
+ 1663  g++ -std=c++11 mio.cpp -o a
+ 1664  ./a
+ 1665  g++ -std=c++11 mio.cpp -o a
+ 1666  ./a
+ 1667  g++ -std=c++11 mio.cpp -o a
+ 1668  ./a
+ 1669  g++ -std=c++11 mio.cpp -o a
+ 1670  ./a
+ 1671  g++ -std=c++11 mio.cpp -o a
+ 1672  ./a
+ 1673  g++ -std=c++11 mio.cpp -o a
+ 1674  ./a
+ 1675  g++ -std=c++11 mio.cpp -o a
+ 1676  ./a
+ 1677  g++ -std=c++11 mio.cpp -o a
+ 1678  ./a
+ 1679  g++ -std=c++11 mio.cpp -o a
+ 1680  ./a
+ 1681  g++ -std=c++11 mio.cpp -o a
+ 1682  ./a
+ 1683  g++ -std=c++11 mio.cpp -o a
+ 1684  ./a
+ 1685  g++ -std=c++11 mio.cpp -o a
+ 1686  ./a
+ 1687  g++ -std=c++11 mio.cpp -o a
+ 1688  ./a
+ 1689  g++ -std=c++11 mio.cpp -o a
+ 1690  ./a
+ 1691  g++ -std=c++11 mio.cpp -o a
+ 1692  ./a
+ 1693  g++ -std=c++11 mio.cpp -o a
+ 1694  ./a
+ 1695  g++ -std=c++11 mio.cpp -o a
+ 1696  ./a
+ 1697  g++ -std=c++11 mio.cpp -o a
+ 1698  ./a
+ 1699  g++ -std=c++11 mio.cpp -o a
+ 1700  ./a
+ 1701  g++ -std=c++11 mio.cpp -o a
+ 1702  ./a
+ 1703  g++ -std=c++11 mio.cpp -o a
+ 1704  ./a
+ 1705  g++ -std=c++11 mio.cpp -o a
+ 1706  ./a
+ 1707  g++ -std=c++11 mio.cpp -o a
+ 1708  ./a
+ 1709  g++ -std=c++11 mio.cpp -o a
+ 1710  ./a
+ 1711  g++ -std=c++11 mio.cpp -o a
+ 1712  ./a
+ 1713  g++ -std=c++11 mio.cpp -o a
+ 1714  ./a
+ 1715  g++ -std=c++11 mio.cpp -o a
+ 1716  ./a
+ 1717  g++ -std=c++11 mio.cpp -o a
+ 1718  ./a
+ 1719  g++ -std=c++11 mio.cpp -o a
+ 1720  ./a
+ 1721  g++ -std=c++11 mio.cpp -o a
+ 1722  ./a
+ 1723  g++ -std=c++11 mio.cpp -o a
+ 1724  ./a
+ 1725  g++ -std=c++11 mio.cpp -o a
+ 1726  ./a
+ 1727  g++ -std=c++11 mio.cpp -o a
+ 1728  ./a
+ 1729  g++ -std=c++11 mio.cpp -o a
+ 1730  ./a
+ 1731  g++ -std=c++11 mio.cpp -o a
+ 1732  ./a
+ 1733  g++ -std=c++11 mio.cpp -o a
+ 1734  ./a
+ 1735  g++ -std=c++11 mio.cpp -o a
+ 1736  ./a
+ 1737  g++ -std=c++11 mio.cpp -o a
+ 1738  ./a
+ 1739  g++ -std=c++11 mio.cpp -o a
+ 1740  ./a
+ 1741  g++ -std=c++11 mio.cpp -o a
+ 1742  ./a
+ 1743  g++ -std=c++11 mio.cpp -o a
+ 1744  ./a
+ 1745  clear
+ 1746  g++ -std=c++11 mio.cpp -o a
+ 1747  ./a
+ 1748  g++ -std=c++11 mio.cpp -o a
+ 1749  ./a
+ 1750  g++ -std=c++11 mio.cpp -o a
+ 1751  ./a
+ 1752  g++ -std=c++11 mio.cpp -o a
+ 1753  ./a
+ 1754  g++ -std=c++11 mio.cpp -o a
+ 1755  ./a
+ 1756  g++ -std=c++11 mio.cpp -o a
+ 1757  ./a
+ 1758  g++ -std=c++11 mio.cpp -o a
+ 1759  ./a
+ 1760  g++ -std=c++11 mio.cpp -o a
+ 1761  ./a
+ 1762  g++ -std=c++11 mio.cpp -o a
+ 1763  ./a
+ 1764  g++ -std=c++11 mio.cpp -o a
+ 1765  ./a
+ 1766  g++ -std=c++11 mio.cpp -o a
+ 1767  ./a
+ 1768  g++ -std=c++11 mio.cpp -o a
+ 1769  ./a
+ 1770  g++ -std=c++11 mio.cpp -o a
+ 1771  ./a
+ 1772  g++ -std=c++11 mio.cpp -o a
+ 1773  ./a
+ 1774  g++ -std=c++11 mio.cpp -o a
+ 1775  ./a
+ 1776  g++ -std=c++11 mio.cpp -o a
+ 1777  ./a
+ 1778  g++ -std=c++11 mio.cpp -o a
+ 1779  ./a
+ 1780  g++ -std=c++11 mio.cpp -o a
+ 1781  ./a
+ 1782  g++ -std=c++11 mio.cpp -o a
+ 1783  ./a
+ 1784  g++ -std=c++11 mio.cpp -o a
+ 1785  ./a
+ 1786  g++ -std=c++11 mio.cpp -o a
+ 1787  ./a
+ 1788  g++ -std=c++11 mio.cpp -o a
+ 1789  ./a
+ 1790  g++ -std=c++11 mio.cpp -o a
+ 1791  ./a
+ 1792  g++ -std=c++11 mio.cpp -o a
+ 1793  ./a
+ 1794  g++ -std=c++11 mio.cpp -o a
+ 1795  ./a
+ 1796  g++ -std=c++11 mio.cpp -o a
+ 1797  ./a
+ 1798  g++ -std=c++11 mio.cpp -o a
+ 1799  ./a
+ 1800  g++ -std=c++11 mio.cpp -o a
+ 1801  ./a
+ 1802  g++ -std=c++11 mio.cpp -o a
+ 1803  ./a
+ 1804  g++ -std=c++11 mio.cpp -o a
+ 1805  ./a
+ 1806  g++ -std=c++11 mio.cpp -o a
+ 1807  ./a
+ 1808  g++ -std=c++11 mio.cpp -o a
+ 1809  ./a
+ 1810  cd Descargas/
+ 1811  cd Compiladores/
+ 1812  g++ -std=c++11 mio.cpp -o a
+ 1813  ls
+ 1814  cd ..
+ 1815  cd Lexico/
+ 1816  ls
+ 1817  g++ -std=c++11 mio.cpp -o a
+ 1818  ./a
+ 1819  subl lenguaje.txt 
+ 1820  subl mio.cpp 
+ 1821  g++ -std=c++11 mio.cpp -o a
+ 1822  ./a
+ 1823  g++ -std=c++11 mio.cpp -o a
+ 1824  ./a
+ 1825  g++ -std=c++11 mio.cpp -o a
+ 1826  ./a
+ 1827  clear
+ 1828  ./a
+ 1829  clear
+ 1830  g++ -std=c++11 mio.cpp -o a
+ 1831  ./a
+ 1832  g++ -std=c++11 mio.cpp -o a
+ 1833  ./a
+ 1834  g++ -std=c++11 mio.cpp -o a
+ 1835  ./a
+ 1836  g++ -std=c++11 mio.cpp -o a
+ 1837  ./a
+ 1838  g++ -std=c++11 mio.cpp -o a
+ 1839  ./a
+ 1840  g++ -std=c++11 mio.cpp -o a
+ 1841  ./a
+ 1842  g++ -std=c++11 mio.cpp -o a
+ 1843  ./a
+ 1844  g++ -std=c++11 mio.cpp -o a
+ 1845  ./a
+ 1846  g++ -std=c++11 mio.cpp -o a
+ 1847  ./a
+ 1848  g++ -std=c++11 mio.cpp -o a
+ 1849  ./a
+ 1850  g++ -std=c++11 mio.cpp -o a
+ 1851  ./a
+ 1852  g++ -std=c++11 mio.cpp -o a
+ 1853  ./a
+ 1854  g++ -std=c++11 mio.cpp -o a
+ 1855  ./a
+ 1856  g++ -std=c++11 mio.cpp -o a
+ 1857  ./a
+ 1858  g++ -std=c++11 mio.cpp -o a
+ 1859  ./a
+ 1860  g++ -std=c++11 mio.cpp -o a
+ 1861  ./a
+ 1862  g++ -std=c++11 mio.cpp -o a
+ 1863  ./a
+ 1864  g++ -std=c++11 mio.cpp -o a
+ 1865  ./a
+ 1866  g++ -std=c++11 mio.cpp -o a
+ 1867  ./a
+ 1868  g++ -std=c++11 mio.cpp -o a
+ 1869  ./a
+ 1870  g++ -std=c++11 mio.cpp -o a
+ 1871  ./a
+ 1872  g++ -std=c++11 mio.cpp -o a
+ 1873  ./a
+ 1874  g++ -std=c++11 mio.cpp -o a
+ 1875  ./a
+ 1876  g++ -std=c++11 mio.cpp -o a
+ 1877  ./a
+ 1878  g++ -std=c++11 mio.cpp -o a
+ 1879  ./a
+ 1880  g++ -std=c++11 mio.cpp -o a
+ 1881  ./a
+ 1882  g++ -std=c++11 mio.cpp -o a
+ 1883  ./a
+ 1884  g++ -std=c++11 mio.cpp -o a
+ 1885  ./a
+ 1886  g++ -std=c++11 mio.cpp -o a
+ 1887  ./a
+ 1888  g++ -std=c++11 mio.cpp -o a
+ 1889  ./a
+ 1890  g++ -std=c++11 mio.cpp -o a
+ 1891  ./a
+ 1892  g++ -std=c++11 mio.cpp -o a
+ 1893  ./a
+ 1894  g++ -std=c++11 mio.cpp -o a
+ 1895  ./a
+ 1896  g++ -std=c++11 mio.cpp -o a
+ 1897  ./a
+ 1898  g++ -std=c++11 mio.cpp -o a
+ 1899  ./a
+ 1900  g++ -std=c++11 mio.cpp -o a
+ 1901  ./a
+ 1902  g++ -std=c++11 mio.cpp -o a
+ 1903  ./a
+ 1904  g++ -std=c++11 mio.cpp -o a
+ 1905  ./a
+ 1906  g++ -std=c++11 mio.cpp -o a
+ 1907  ./a
+ 1908  g++ -std=c++11 mio.cpp -o a
+ 1909  ./a
+ 1910  g++ -std=c++11 mio.cpp -o a
+ 1911  ./a
+ 1912  g++ -std=c++11 mio.cpp -o a
+ 1913  ./a
+ 1914  g++ -std=c++11 mio.cpp -o a
+ 1915  ./a
+ 1916  g++ -std=c++11 mio.cpp -o a
+ 1917  ./a
+ 1918  g++ -std=c++11 mio.cpp -o a
+ 1919  ./a
+ 1920  g++ -std=c++11 mio.cpp -o a
+ 1921  ./a
+ 1922  g++ -std=c++11 mio.cpp -o a
+ 1923  ./a
+ 1924  g++ -std=c++11 mio.cpp -o a
+ 1925  ./a
+ 1926  clear
+ 1927  ./a
+ 1928  clear
+ 1929  g++ -std=c++11 mio.cpp -o a
+ 1930  ./a
+ 1931  clear
+ 1932  ./a
+ 1933  clear
+ 1934  g++ -std=c++11 mio.cpp -o a
+ 1935  ./a
+ 1936  g++ -std=c++11 mio.cpp -o a
+ 1937  ./a
+ 1938  g++ -std=c++11 mio.cpp -o a
+ 1939  ./a
+ 1940  g++ -std=c++11 mio.cpp -o a
+ 1941  ./a
+ 1942  g++ -std=c++11 mio.cpp -o a
+ 1943  ./a
+ 1944  g++ -std=c++11 mio.cpp -o a
+ 1945  ./a
+ 1946  g++ -std=c++11 mio.cpp -o a
+ 1947  ./a
+ 1948  g++ -std=c++11 mio.cpp -o a
+ 1949  ./a
+ 1950  ls
+ 1951  ls
+ 1952  g++ mio.cpp -lncurses -o a
+ 1953  ./a
+ 1954  cd Descargas/
+ 1955  g++ mio.cpp -lncurses -o a
+ 1956  cd Descargas/
+ 1957  ./a
+ 1958  cd Descargas/
+ 1959  g++ mio.cpp -lncurses -o a
+ 1960  ./a
+ 1961  g++ mio.cpp -lncurses -o aA
+ 1962  ./a
+ 1963  g++ mio.cpp -lncurses -o aA
+ 1964  ./a
+ 1965  g++ mio.cpp -lncurses -o aA
+ 1966  ./a
+ 1967  g++ mio.cpp -lncurses -o aA
+ 1968  ./a
+ 1969  g++ mio.cpp -lncurses -o aA
+ 1970  ./a
+ 1971  g++ mio.cpp -lncurses -o a
+ 1972  ./a
+ 1973  g++ mio.cpp -lncurses -o a
+ 1974  ./a
+ 1975  g++ mio.cpp -lncurses -o a
+ 1976  ./a
+ 1977  g++ mio.cpp -lncurses -o a
+ 1978  ./a
+ 1979  g++ mio.cpp -lncurses -o a
+ 1980  ./a
+ 1981  g++ mio.cpp -lncurses -o a
+ 1982  ./a
+ 1983  g++ mio.cpp -lncurses -o a
+ 1984  ./a
+ 1985  ./s.exe 
+ 1986  subl client.c
+ 1987  hostname -I 
+ 1988  g++ -std=c++11 -pthread server.c -o s
+ 1989  cd Descargas/
+ 1990  g++ -std=c++11 -pthread server.c -o s
+ 1991  g++ -std=c++11 -pthread client.c -o c
+ 1992  ./s
+ 1993  ./c
+ 1994  cd Descargas/ls
+ 1995  cd Descargas/
+ 1996  ls
+ 1997  cd Compiladores/
+ 1998  ls
+ 1999  cd ..
+ 2000  zzsublzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz 
+ 2001  cd Lexico/
+ 2002  g++ -std=c++0x mio.cpp -o a
+ 2003  ./a
+ 2004  history>> comandosç
